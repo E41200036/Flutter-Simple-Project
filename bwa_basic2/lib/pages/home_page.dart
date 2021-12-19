@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BasicWidget extends StatelessWidget {
@@ -6,6 +7,20 @@ class BasicWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('E41200036'),
+            Text('Moh Ibnu Abdurrohman Sutio'),
+          ],
+        ),
+      ),
+    );
+
+    /*
+    AppBar
+    Scaffold(
       appBar: AppBar(
         title: const Text('Simple App'),
         actions: [
@@ -26,5 +41,6 @@ class BasicWidget extends StatelessWidget {
         backgroundColor: const Color(0xff2a2a2a),
       ),
     );
+    */
   }
 }
